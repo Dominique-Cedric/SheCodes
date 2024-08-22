@@ -1,10 +1,52 @@
-# Python Conditionals Exercises
-The `conditionals_challenges.py` file in this repo contains challenges for you.
+def can_climb(has_helmet: bool, has_rope: bool):
+    """To go rock climbing, you need a helmet and some rope. This function 
+    calculates whether you are able to go rock climbing.
 
-For each challenge you will be required to write a function. The challenges come with "skeleton" functions for you to modify, including "docstrings" that describe what the function should do. They also come with tests to check your work.
+    Arguments:
+        - has_helmet: a boolean representing whether or not the climber has their helmet
+        - has_rope: a boolean representing whether or not the climber has their rope
 
-To solve these challenges, you should simply delete the word `pass` from the function, and write your own logic in the function body. No need to modify the names of the functions or the parameters! Leave the docstrings as they are too - it's good practise to use docstrings to document your code.
+    Returns:
+        - a boolean that is true when the climber is allowed to climb, and false otherwise.
+    """
 
-You can run the command `python run_tests.py` in the terminal to check your work. When you have correctly solved all three challenges, the tests will pass. If you make an error in any of the challenges, the tests will tell you what went wrong. You may need to do a little Googling/thinking to figure out what the error messages mean. 
+    return has_helmet and has_rope 
 
-If you need help interpreting the challenges, or have a bug you can't solve, grab a mentor for help!
+
+def red_light_camera(light_colour: str, car_detected: bool):
+    """A function to determine whether or not a driver should get a ticket 
+    for running a red light.
+
+    Arguments:
+        - light_colour: a string representing the colour of the light. 
+            Valid colours are "Red", "Amber", or "Green"
+        - car_detected: a boolean representing whether or not a car 
+            is driving through the intersection.
+
+    Returns: A boolean that is true if a car ran the red light, and false otherwise.
+    """
+    return light_colour == "Red" and car_detected
+
+def can_ride_rollercoaster(rider_height: float):
+    """Only people who are over 120cm in height can ride the rollercoaster.
+    
+    Arguments:
+        - rider_height: a float representing the height of the prospective rider in centimetres
+        
+    Returns: a boolean representing whether or not the prospective rider is allowed on the rollercoaster.
+    """
+
+    return rider_height > 120.0
+
+def login(password: str):
+    """Only users who enter the password "quartzgleam?1" can log in successfully.
+
+    Arguments:
+        - password: a string representing the user's password input.
+
+    Returns:
+        - a boolean representing whether or not the user's password was correct.
+    """
+
+    correct_password = "quartzgleam?1"
+    return password == correct_password
