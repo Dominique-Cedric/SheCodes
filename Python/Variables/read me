@@ -1,0 +1,57 @@
+🤔 Exercises 🤔
+Let's put what we just learned to practise.
+
+These problems are tricky! Don't despair if you run into problems.
+
+First, try to read the error message you get and see if you can decipher it.
+Next, try googling the problem you're having to see if you can find a solution.
+Feel free to try various solutions. It's ok to break stuff while you're trying to fix it.
+Then, ask a mentor for help!
+Q1: Write a program that takes two numbers from the user, and outputs their sum.
+Example Input	Example Terminal Output
+3
+9	Enter a number: 3
+Enter another number: 9
+12.0
+-3
+9	Enter a number: -3
+Enter another number: 9
+6.0
+3.0
+-9	Enter a number: 3.0
+Enter another number: -9
+-6.0
+Q2: Write a program that takes two numbers from the user, and outputs the equation representing the multiplication of the two numbers.
+Example Input	Example Terminal Output
+3
+9	Enter a number: 3
+Enter another number: 9
+3.0 * 9.0 = 27.0
+-3
+9	Enter a number: -3
+Enter another number: 9
+-3.0 * 9.0 = -27.0
+3.0
+-9	Enter a number: 3.0
+Enter another number: -9
+3.0 * -9.0 = -27.0
+Q3: Write a program that takes a distance in kilometers from the user, and output the distance in meters and centimeters.
+Example Input	Example Terminal Output
+10	How many kilometres? 10
+10.0km = 10000m
+10.0km = 1000000cm
+5.4	How many kilometres? 5.4
+5.4km = 5400m
+5.4km = 540000cm
+Q4: Write a program that takes the user's name and height (in centimeters), and outputs a summary sentence.
+Example Input	Example Terminal Output
+Ayda
+149	What is your name? Ayda
+How tall are you (cms)? 149
+Ayda is 149cms tall.
+Pin-Lee
+178	What is your name? Pin-Lee
+How tall are you (cms)? 178
+Pin-Lee is 178cms tall.
+Q5: Is the input function a statement or an expression?
+Have a think, have a google, and ask your mentors to see if your intuition was correct!
