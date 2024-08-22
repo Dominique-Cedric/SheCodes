@@ -1,0 +1,271 @@
+<h1><img src=../../global_images/logo.png width="100" />🔢 Variables And User Input ⌨️ <img src=../../global_images/logo.png width="100" /></h1>
+
+When we write a computer program, we are defining a series of operations that need to be executed. These operations are changes that get made to data. "Data" is really just a fancy way of saying "pieces of information".
+
+To get this data into our program, we need some way for it to be input. Then while the data is being manipulated by our program, we need a place to store it. That's what this topic is all about!
+
+<h2>Table of Contents</h2>
+
+- [📊 Data Types 📊](#-data-types-)
+  - [🧵 Strings 🧵](#-strings-)
+  - [🔢 Integers 🔢](#-integers-)
+  - [🛟 Floats 🛟](#-floats-)
+  - [✅ Booleans ❌](#-booleans-)
+  - [😶 `None` 😶](#-none-)
+- [🔠 Variables 🔠](#-variables-)
+  - [Variables Example 1](#variables-example-1)
+  - [Variables Example 2](#variables-example-2)
+- [🗣️ Expressions vs Statements 🗣️](#️-expressions-vs-statements-️)
+  - [😜 Expressions 😱](#-expressions-)
+  - [🎤 Statements 🎤](#-statements-)
+- [📥 User Input 📥](#-user-input-)
+
+---
+---
+
+## 📊 Data Types 📊
+![](./img/hangover-math.gif)  
+Before we go throwing data around willy-nilly, it's important to note that there isn't just one type of data that we can manipulate in our Python code.
+
+In fact there are a great many. We won't cover all of them today, but here's five to be going on with...
+
+---
+
+### 🧵 Strings 🧵
+"Strings" are what we call text data in Python. Think "a string of characters".
+
+Here are some examples of strings:
+
+- `"In a hole in the ground there lived a hobbit."`
+- `'Hi! My name is Veronica Cucamonga.'`
+- `"Unit 4/56 Real St, Annerley"`
+- `'?! ... :D'`
+- `"                           "`
+- `""`
+- `"3.14"`
+
+Yes, every single one of those is a string. Any number (includine zero) of typable characters (and even some that can't be typed) can appear in a string. The trick is that strings are *only* text. Even strings that just contain numbers get treated like they are text, so you can't do mathematics to them the way you might expect.
+
+When we write a string, we surround the letters with quotation marks to indicate that what we are writing is text (and not the name of a variable or anything else). You can use single quotes `'like this'` or double quotes `"like this"`, as long as you use matching pairs. You can even surround a string in triple-single quotes `'''like this'''`, or triple-double quotes `"""like this"""`.
+
+Having multiple types of quotation marks means you can write a string that *contains a quote*. For example, maybe you want one string that says this: `"'I don’t like anything here at all.' said Frodo, 'step or stone, breath or bone. Earth, air and water all seem accursed. But so our path is laid.'"`
+
+That whole thing is one string, because it's surrounded in a pair of double quotes. There are single quotes inside it, but they get treated like just another text character, because they're already inside a string.
+
+---
+
+### 🔢 Integers 🔢
+An "integer" is a whole number. In Python, we represent them simply by typing the number. 
+
+Here are some examples of integers:
+- `3`
+- `0`
+- `-5`
+- `9999999999999999`
+
+You get the idea. Integers can't be fractions, but they can be negative and they can be zero. You can still do division on integers, and in Python if you end up with an answer that isn't a whole number you get...
+
+---
+
+### 🛟 Floats 🛟 
+A "float" is the name we give to a decimal number. Again, in Python we represent these by simply typing the number, with a fullstop for the decimal point. 
+
+Some examples of floats:
+
+- `2.5`
+- `9.99999999`
+- `-56.5`
+- `3.0`
+- `0.0`
+
+Every single one of these is a float. Notice that there are some values in there that we might want to call a whole number - the difference here is that we included a decimal point. The word "float" is short for "floating point number", where the "point" that is "floating" is the decimal point. So, if it has a decimal in it, it's a float no matter what.
+
+---
+
+### ✅ Booleans ❌
+A "boolean" value in Python is a little different to the ones we've seen so far. There are only two allowed values for this data type - `True`, and `False`. We represent them by writing the words just as you see them in the previous sentence, with no quotation marks. (The capitalisation is important!)
+
+As you might have guessed, this is useful for keeping track of whether a certain condition is true or false. Is it raining right now? `False`. Am I a genius hacker? `True`. 
+
+We'll look at this is more detail in another lesson, so stay tuned.
+
+---
+
+### 😶 `None` 😶
+The weirdest one of all. There's only one value allowed for this type, and that is `None`. (Once again, we type it without quotation marks, and the capitalisation must be correct.) 
+
+We use this to indicate the *lack* of a value. For example, if we were writing a program to keep track of people's fax numbers, we would need a value of `None` when it came to me. I just straight up don't have a fax machine! 
+
+It might seem silly, but we need a way to record the lack of a value, and it wouldn't make sense for "no value" to be of any of the other types. So it gets its own type.
+
+---
+---
+
+## 🔠 Variables 🔠
+![](./img/variables.png)
+> Don't worry, we don't cover stuff like this image until next lesson.
+>
+> <sub>I'm KIDDING. We won't be covering anything like complex algebra in this course. That being said, there's no reason you couldn't use Python for something like this is you decided you were interested in it.</sub>
+
+Let's say we wanted to write a program to say hello to the user. We would probably want to ask them their name, and then use the `print` function to display a string that said `"Hello, <name>!"` (swapping in whatever they had said their name was).
+
+That's two steps. First we ask the name, then we display the string. The computer will execute each step in turn for us, which means that during the second step it needs to "remember" the result it got from the first step.
+
+A variable is pretty much just a "named fact". You might like to think of it as a box with a label. We store a piece of data inside the box, so that it's right there when we need it later. The label is the name of the variable, which allows us to summon it back again and access its contents when we need it.
+
+![](./img/namebox.drawio.svg)
+
+In Python, we assign a value to a variable by using the `=` operator.
+
+---
+
+### Variables Example 1
+
+Let's see it in use! Navigate to your `python/` directory in the terminal, open it in VS Code, and create a new file called `variables.py`. Here's the code you'll need:
+
+```py
+name = "Oliver" 
+
+print(f"Hello {name}!")
+```
+
+Now jump back over to the terminal and run that script to see the output!
+
+![](./img/variables.py.png)
+
+First we assigned a value to the variable using the `=` operator. Then we accessed the value in our `print` function, by referring to the variable by name.
+
+> There's one extra piece of magic going on here - an f-string. F-string stands for "Format String", and it's a way of specifying a string that lets you insert variables and other expressions into the text. 
+>
+> To make an f-string, you add the letter `f` before the first quotation mark, and then insert your expression inside curly braces. Try running `print(f"Three times three is {3*3}")`, and see what you get!
+
+---
+
+### Variables Example 2
+
+Let's demonstrate a few more uses of variables. Make some changes to `variables.py`:
+
+```diff
+name = "Oliver"
+
+print(f"Hello {name}!")
++ 
++ my_favourite_number = 3
++ 
++ times_five = my_favourite_number * 5
++ 
++ print("I multiplied your favourite number by 5 and got...")
++ print(times_five)
+```
+> Recognise the format of this code? It's the same `diff` format we were using in HTML; the plusses indicate lines that have been added. We'll keep using it where it's useful, so don't forget about it!
+
+What happens when you run it now?
+
+![](./img/variables3.png)
+
+This time we've added two more variable assignments: 
+- first we assigned `3` to `my_favourite_number`
+- then we assigned the result of `my_favourite_number` times `5` to the variable called `times_five`. Note that the symbol for multiplication in Python is an asterisk: `*`
+
+---
+---
+
+## 🗣️ Expressions vs Statements 🗣️
+There's a distinction we should draw your attention to here. Pieces of Python code can be categorised as either expressions, or as statements.
+
+---
+
+### 😜 Expressions 😱
+Any chunk of code that can be boiled down to some value is called an "expression". A good way to think about this is that anything you can save in a variable is an expression.
+
+Here are some examples of expressions:
+
+```py
+"hello world"
+```
+> This is a very simple expression. We have a string, which has a value equal to `"hello world"`. Easy.
+
+<br>
+
+```py
+1+1
+```
+> This is another relatively simple expression - we have two integers here, and we are combining them with the addition operator. Since one plus one is two, the value of this expression is `2`.
+
+<br>
+
+```py
+pi_times_five = 3.14 * 5
+
+pi_times_five
+```
+> There are **two** expressions here. First, we have `3.14 * 5`. This is a mathematical operation, so its value can be calculated (`15.7`). We prove it is an expression by saving it to a variable.
+> 
+> The second expression is the last line. The variable *contains a value*, which means that just the variable on its own is itself an expression. Once again, this expression is equal to `15.7`.
+
+---
+
+### 🎤 Statements 🎤
+A statement, on the other hand, is a little more broad. A statement is just any chunk of code that "does something". This can be:
+- printing a value to the terminal
+- assigning a value to a variable
+- taking user input
+- etc...
+
+Examples of statements we've already seen are:
+
+```py
+name = "Oliver"
+```
+> We are assigning a value to a variable. `"Oliver"` here is an expression, but the line as a whole is a statement. You can tell its a statement, because it does something - it sets the value of the `name` variable to `"Oliver"`.
+
+<br>
+
+```py
+pi_times_five = 3.14 * 5
+```
+> This is the same as the first example. The code to the right of the equals sign is an expression, but the line taken as a whole is a statement.
+
+<br>
+
+```py
+print(some_variable)
+```
+> We are *doing* something here. Whatever is in that variable is going to be printed to the terminal!
+
+---
+---
+
+## 📥 User Input 📥
+Ok, time to wrap up the info-dump with one last knowledge-bomb. 
+
+We've mentioned the possibility of getting data from the user a few times in this document, but we've never shown how that works. There are many ways, but the simplest one is to use the `input` function.
+
+`input` lets us pause our program and wait for the user to type something into the terminal. Whatever they type in will be taken into our program as a string.
+
+Let's look at an example. Create a file called `input.py`, and give it these contents:
+
+```py
+user_name = input("What is your name?: ")
+
+print(f"Hello {user_name}! Nice to meet you.")
+```
+
+Here's what you should get when you run this script:
+
+![](img/input1.png)
+
+Try typing in an answer and hitting enter:
+
+![](img/input2.png)
+
+Nifty, right? The string we put inside the brackets of the `input` function acts as a prompt that gets displayed to the user, telling them what kind of information they should supply. Then their response gets brought into our script and handed over. We can save it to a variable, print it, or do anything else we could do to a string!
+
+> [!CAUTION]    
+> What would you do if you wanted the user to give you some data that wasn't a string? This is a tricky one. Even if they type a number, they'll be *typing it into the terminal*, and Python assumes that anything that gets typed into the terminal is a string by definition.
+>
+> This means that if we are expecting a different data type, we have to *convert* the string to that type. Well, guess what? 
+> 
+> ### **We aren't going to tell you how to do that.** 
+> 
+> Instead, try googling it. Seriously, this is a normal and good way to solve a problem as a programmer. Go type in "Python convert string to integer" and see what comes up. A great website to look for answers to this sort of question is stackoverflow dot com.
