@@ -1,0 +1,25 @@
+class Dog():
+    # class attributes 
+    kind = 'canine'
+    
+    # instance attribute
+    # def __init__(self, name):
+    #     self.name = name
+
+    #instance attribute
+    def __init__(self, dog_name, breed, age, colour):
+        self.name = dog_name
+        self.breed = breed
+        self.age = age
+        self.colour = colour
+
+dog = Dog('Jett', 'pug', 5, 'black')
+print(dog.name, dog.breed, dog.age, dog.colour)
+dog2 = Dog('Bub', 'poodle', 3, 'white')
+print(dog2.name, dog2.breed, dog2.age, dog2.colour)
+
+
+# dog = Dog('pug','5','black')
+# print(dog.age, dog.breed, dog.colour)
+# dog2 = Dog()
+# print(dog2.age, dog2.breed, dog2.colour)
