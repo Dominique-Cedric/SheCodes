@@ -2,7 +2,7 @@
 {{Dominique }}
 
 ## Planning:
-### Concept/Name
+### Concept/Name: 
 {{ Include a short description of your website concept here. }}
 
 ### Intended Audience/User Stories
