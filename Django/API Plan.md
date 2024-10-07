@@ -77,7 +77,7 @@ Functionality
 | --- | ----------- | ------- | ------- | ------------ | --------------------- | ---------------------------- |
 |    |          |         |       |             |                       |                              |
 |   /projects/   |           GET     | Display all projects        |  N/A         |        200       |                       |                              |
-|     |             |         |         |              |                       |                              |
+| /projects/:id    |       GET      |  Return a project by id       |      N/A   |     200         |          /projects?is_open=True             |            GET                  |Return projects is open
 |     |             |         |         |              |                       |                              |
 |     |             |         |         |              |                       |                              |
 |     |             |         |         |              |                       |                              |
