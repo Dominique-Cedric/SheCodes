@@ -76,12 +76,10 @@ Functionality
 
 | URL | HTTP Method | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
 | --- | ----------- | ------- | ------------ | --------------------- | ---------------------------- |
-| --- | ----------- | ------- | ------------ | --------------------- | ---------------------------- |
-|/projects/  |GET           | Display all projects |  N/A         |        200       | N/A       |                              |
-| /projects/:id |GET      |  Return a project by id  |      N/A   |     200         |
-|/projects?is_open=True             |            GET                  |Return projects is open
-|  N/A   |       200      |         |         |              |                       |                              |
-|     |             |         |         |              |                       |                              |
+|/projects/    |GET   | Display all projects |  N/A   |  200   | N/A   |
+| /projects/:id |GET  |  Return a project by id  |N/A   |  200   | N/A  |
+|/projects?is_open=True  | GET   |Return projects is open |N/A   |  200   | N/A  |
+| /projects/    | POST   |Create a new projects | Project object | 201    | Login required        |                              |
 |     |             |         |         |              |                       |                              |
 |     |             |         |         |              |                       |                              |
 |     |             |         |         |              |                       |                              |
