@@ -75,8 +75,8 @@ Functionality
 
 | URL | HTTP Method | Purpose | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
 | --- | ----------- | ------- | ------- | ------------ | --------------------- | ---------------------------- |
-|  /projects/   |    GET         |  Display all projects       |      N/A   |   200           |                       |                              |
-|     |             |         |         |              |                       |                              |
+|    |          |         |       |             |                       |                              |
+|   /projects/   |           GET     | Display all projects        |  N/A         |        200       |                       |                              |
 |     |             |         |         |              |                       |                              |
 |     |             |         |         |              |                       |                              |
 |     |             |         |         |              |                       |                              |
