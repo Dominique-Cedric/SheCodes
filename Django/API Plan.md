@@ -103,6 +103,7 @@ Functionality
 | /users/:id              | PUT         | Update the user by id                | User object        | 200                   | Login required / Must be the project owner or admin  |
 | /users/:id              | DELETE      | Delete the user by id                | N/A               | 200                   | Login required / Must be the project owner or admin  |
 | api-token-auth/         | POST        | Get Super API User Token             | {"username": "superoliver","password": "oliver", "title": "Example Project", "description": "The example project.", "goal": 150, "image": "https://via.placeholder.com/300.jpg",	"is_open": true, "date_created": "2020-03-20T14:28:23.382748Z"} | 200 | Login required / Must be the project owner or admin  |
+|              |     |                |               |                    |   |
 
 
 ### DB Schema
