@@ -5,7 +5,7 @@ Rising Athletes
 ### Concept/Name: 
 The platform aims to support children in sports by raising funds and incentives for families facing unexpected expenses such as travel and accommodation; sporting gear and fees and levys.
 
-### Intended Audience/User Stories
+### Intended Audience
 
     1. Parents of Young Athletes Seeking financial assistance for their children's sports-related expenses.
     2. Coaches and Team Managers: Looking for resources to help families navigate costs and access support.
@@ -13,7 +13,7 @@ The platform aims to support children in sports by raising funds and incentives 
     4. Potential Donors/Sponsors: Individuals or businesses wanting to contribute to youth sports initiatives.
     5. Youth Athletes: Kids looking for information and encouragement to pursue sports safely and effectively.
 
-User Stories
+### User Stories
     1. As a parent, I want to find funding options to help cover my child’s sports expenses, so I can support their athletic pursuits without financial strain.
     2. As a coach, I want to access resources and links on health and wellbeing, so I can better support my team’s overall development.
     3. As a community organization representative**, I want to partner with the website for fundraising events, so we can collectively enhance youth sports opportunities.
