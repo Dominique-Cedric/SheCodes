@@ -1,5 +1,5 @@
 # Crowdfunding Back End
-{{Dominique Cedric}}
+RisingAthletes
 
 ## Planning:
 ### Concept/Name: 
