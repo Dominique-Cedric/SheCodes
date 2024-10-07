@@ -84,7 +84,7 @@ Functionality
 
 ### API Spec
 
-
+|  | | |  |  | |
 | URL | HTTP Method | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
 | --- | ----------- | ------- | ------------ | --------------------- | ---------------------------- |
 |/projects/    |GET   | Display all projects |  N/A   |  200   | N/A   |
