@@ -20,11 +20,12 @@ Intended Audience
     5. Youth Athletes: Kids looking for information and encouragement to pursue sports safely and effectively.
 
 User Stories
+
     1. As a parent, I want to find funding options to help cover my child’s sports expenses, so I can support their athletic pursuits without financial strain.
     
     2. As a coach, I want to access resources and links on health and wellbeing, so I can better support my team’s overall development.
     
-    3. As a community organization representative**, I want to partner with the website for fundraising events, so we can collectively enhance youth sports opportunities.
+    3. As a community organization representative, I want to partner with the website for fundraising events, so we can collectively enhance youth sports opportunities.
     
     4. As a potential donor, I want to read testimonials from families who have benefited from the support, so I can understand the impact of my contribution.
     
