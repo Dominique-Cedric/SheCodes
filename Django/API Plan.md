@@ -84,29 +84,6 @@ Functionality
 
 ### API Spec
 
-| URL | HTTP Method | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
-| --- | ----------- | ------- | ------------ | --------------------- | ---------------------------- |
-|/projects/    |GET   | Display all projects |  N/A   |  200   | N/A   |
-| /projects/:id |GET  |  Return a project by id  |N/A   |  200   | N/A  |
-|/projects?is_open=True  | GET   |Return projects is open |N/A   |  200   | N/A  |
-| /projects/    | POST   |Create a new projects | Project object | 201    | Login required |
-|/projects/:id | PUT | Update the project |Project object |200 | Login required /Must be the project owner or admin |
-| /projects/:id | DELETE |  Deletes the project  |Project object |200 |  Login required /Must be the project owner or admin |                       
-|/pledges/ | GET |Return all pledges | N/A        |  200            | N/A  |  
-| /pledges/ |  POST |         |         |              |                       |   
-|     |             |         |         |              |                       |   
-|     |             |         |         |              |                       |   
-
-
-
-
-### DB Schema
-![]( {{ ./relative/path/to/your/schema/image.png }} )
-
-
-
-Here’s the updated GitHub table with the specified endpoints, including the purpose, request body, success response code, and authentication/authorization requirements:
-
 | URL                     | HTTP METHOD | PURPOSE                              | REQUEST BODY     | SUCCESS RESPONSE CODE | Authentication/Authorization                          |
 |-------------------------|-------------|--------------------------------------|-------------------|-----------------------|------------------------------------------------------|
 | /projects/              | GET         | Display all projects                 | N/A               | 200                   | N/A                                                  |
@@ -126,4 +103,11 @@ Here’s the updated GitHub table with the specified endpoints, including the pu
 | /users/:id              | PUT         | Update the user by id                | User object        | 200                   | Login required / Must be the project owner or admin  |
 | /users/:id              | DELETE      | Delete the user by id                | N/A               | 200                   | Login required / Must be the project owner or admin  |
 
-Feel free to modify any entries or let me know if you need further assistance!
+
+### DB Schema
+![]( {{ ./relative/path/to/your/schema/image.png }} )
+
+
+
+
+
