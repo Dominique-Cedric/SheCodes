@@ -73,8 +73,9 @@ Functionality
 
 ### API Spec
 
-| URL        | HTTP Method | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
-| ---             | ----------- ------- | ------------ | --------------------- | ---------------------------- |
+| URL | HTTP Method | Purpose | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
+| --- | ----------- | ------- | ------- | ------------ | --------------------- | ---------------------------- |
+|    |          |         |       |             |                       |                              |
 |     |              |                      |                       |                              |
 |/projects/  |GET           | Display all projects |  N/A         |        200       |                       |                              |
 | /projects/:id |GET      |  Return a project by id  |      N/A   |     200         |
